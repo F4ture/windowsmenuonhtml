@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background: url("images/background.png");
+        background-size: cover;
+        padding: 4%;
+    }
+    /* Основной контенер */
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    /* Большие и маленькие */
+    .container__item{
+    display: flex;
+    width: 220px;
+    gap: 20px;
+    }
+    .container__item-element{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    }
+    .container__item-element_small{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+    margin-bottom: 10px;
+    }
+    .container__item-element_small:first-child
+    {
+        margin-right: 10px;
+    }
+    /* Маленьких настраиваю */
+    .small1{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+    .small2{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+    /* Малютки */
+    .container__item-element_small_1{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+    background-color: rgb(12, 60, 175);
+    background-image:url("images/aida.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_small_2{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+    background-color: rgb(12, 60, 175);
+    background-image:url("images/2020_PowerToys_Icon.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_small_3{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+    background-color: rgb(12, 60, 175);
+    background-image:url("images/computer.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_small_4{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+    background-color: rgb(12, 60, 175);
+    background-image:url("images/docx_icon.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    /* Большие ниже */
+    .container__item-element_1{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/background.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_2{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/folder.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_3{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/icons8-riot-games-480.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_4{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/Microsoft_Office_Excel_\(2019–present\).png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_5{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/Microsoft_Office_PowerPoint_\(2019–present\).png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_6{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/new.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_7{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/Osu!_Logo_2016.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_8{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/Telegram_logo.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_9{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/Visual_Studio_Code_1.35_icon.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .container__item-element_10{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/HoYoPlay.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    /* Ниже все элементы правой части */
+    .tab__item
+    {
+    display: flex;
+    width: 220px ;
+    flex-direction: column;
+    margin-left: 40px;
+    }
+    /* Настройка маленьких и больших */
+    .tab__item-element{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    }
+    .tab__item-element_small{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+
+    margin-bottom: 10px;
+    }
+    /* Настройка маленьких кубиков */
+    .small3{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+    .small4{
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+    /* Маленькие кубики */
+    .tab__item-element_small_1{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+    background-color: rgb(12, 60, 175);
+    background-image:url("images/discord.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .tab__item-element_small_2{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+    background-color: rgb(12, 60, 175);
+    background-image:url("images/social.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .tab__item-element_small_3{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+    background-color: rgb(12, 60, 175);
+    background-image:url("images/xbox.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .tab__item-element_small_4{
+    width: 96px;
+    height: 100px;
+    border: 1px solid rgb(12, 60, 175);
+    background-color: rgb(12, 60, 175);
+    background-image:url("images/Mail.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    /* Прямоугольники */
+    .tab__item-element_1{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/HoYoPlay.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .tab__item-element_2{
+    width: 208.5px;
+    height: 100px;
+    border: 1px solid rgb(0, 141, 145);
+    margin-bottom: 10px;
+    background-color: rgb(0, 141, 145);
+    background-image:url("images/visual-studio.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container__item">
+        <div class="container1strow">
+            <div class="container__item-element_1"></div>
+            <div class="container__item-element_2"></div>
+            <div class="container__item-element_3"></div>
+            <div class="container__item-element_4"></div>
+        </div>
+        <div class="container2ndrow">
+            <div class="container__item-element_5"></div>
+            <div class="container__item-element_6"></div>
+            <div class="container__item-element_7"></div>
+            <div class="container__item-element_8"></div>
+        </div>
+        <div class="container3rdrow">
+        <div class="small1">
+            <div class="container__item-element_small_1"></div>
+            <div class="container__item-element_small_2"></div>
+        </div>
+        <div class="small2">
+            <div class="container__item-element_small_3"></div>
+            <div class="container__item-element_small_4"></div>
+        </div>
+        <div class="specrow">
+            <div class="container__item-element_9"></div>
+            <div class="container__item-element_10"></div>
+        </div>
+        </div>
+        <div class="tab__item">
+            <div class="anotherrow">
+                <div class="tab__item-element_1"></div>
+                <div class="tab__item-element_2"></div>
+            </div>
+            <div class="small3">
+                <div class="tab__item-element_small_1"></div>
+                <div class="tab__item-element_small_2"></div>
+            </div>
+            <div class="small3">
+                <div class="tab__item-element_small_3"></div>
+                <div class="tab__item-element_small_4"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
